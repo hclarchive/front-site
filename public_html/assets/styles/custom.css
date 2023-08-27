@@ -1,0 +1,211 @@
+@import '../fonts/style.css';
+
+body {
+    font-family: 'Poppins Regular';
+    font-size:0.85rem;
+    background-color: #eff1f7;
+}
+
+#contents, #footer {
+    background-color : #0E142C;
+}
+
+.nav-item { padding:0px 15px; }
+.nav-item a { font-size:15px; font-weight:600;}
+.nav-item a:hover { color:#EC2D86; }
+
+.container { position: relative; padding:50px 0px; }
+#about .hcl-line { position: absolute; left:calc(50% - 15px); top:calc(0% - 125px); }
+
+.line-background { 
+    background-image: url("/assets/images/bg-line.svg");
+    background-repeat: repeat-y;
+}
+
+.copy-contents { position: absolute; left: 0; top: 0; right: 0; bottom: 0; text-align: center; }
+.copy-title {
+    display: inline-block;
+    text-align: center;
+    font-weight: 400;
+    color:#282828;
+}
+
+.copy-title #copy-val {
+    font-family: 'Poppins Bold';
+    color: #EC2D86;
+}
+
+.copy-title b { font-family: 'Poppins Bold'; }
+
+.copy-desc { margin-top: 8%; font-size: 15px; }
+
+.section-title h3 { color:#FFF; font-size: 35px; line-height: 53px; font-weight: 700; }
+.section-title i { display: block; height:35px; border-left: solid 1px #EC2D86; margin-top: 15px; }
+.section-title p { padding:0px; margin: 0px; display: block; color: #FFF; font-size: 15px; line-height: 26px; font-weight: 400; margin-top: 15px; }
+
+.about-contents { margin-top: 30px; }
+.about-contents .sub-title { font-size: 18px; font-weight: 700; color:#EC2D86;}
+.about-contents p { padding: 0px 0px; line-height: 26px; color: #FFF; font-size: 15px; }
+.about-contents img { filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.2)); }
+
+.service-contents .nav-tabs { border-bottom: none; padding-bottom: 20px; }
+.service-contents .nav-tabs .nav-link { 
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color:#FFF;
+    font-weight: 400;
+    font-size: 15px;
+}
+.service-contents .nav-tabs .nav-link.active {
+    color: #EC2D86;
+    font-weight: 700;
+}
+
+.service-item {
+    padding:24px;
+    background-color: #FFF;
+    border-radius: 30px;
+    border: 1px solid #EAEAEA;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.service-item .txt h4 { margin: 0px 0px; color: #282828; font-size: 18px; font-weight: 700; margin-bottom: 10px; }
+.service-item .txt p { font-size: 13px; }
+
+.service-item .icon {
+    width: 100px !important;
+    height: 100px !important;
+    margin-right: 20px;
+    border: solid 1px #EAEAEA;
+    border-radius: 30px;
+}
+
+.service-item .link {
+    position: absolute;
+    right:10px;
+    bottom:10px;
+    text-decoration: none;
+    color: #EC2D86;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.service-item .app-link { display: flex; flex-direction: row; margin-top:10px;  }
+.service-item .app-link img { width:100px; margin-left: 10px; }
+
+.cooperative-link a img { opacity: 0.5;}
+.cooperative-link a:hover img { opacity: 1;}
+
+
+.news-item { background-color: #272F46; border-radius: 30px; margin-bottom: 20px; }
+.news-item .thumb { max-width: 100%; border-top-left-radius: 30px; border-top-right-radius:30px;  }
+.news-item .contents { color:#FFF; padding:20px; position: relative;  padding-bottom: 60px; }
+.news-item .contents h4 { font-size: 14px; font-weight: 700; }
+.news-item .contents p { font-size: 12px; font-weight: 400; margin-bottom: 0px; }
+.news-item .link { position: absolute; right:20px; bottom: 20px;}
+
+.btn-primary {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 15px;
+    color: #FFF;
+    padding:18px 45px;
+    background: #EC2D86;
+    border-radius: 100px;
+    text-decoration: none;
+    letter-spacing: .1rem;
+}
+
+.btn-primary:hover {
+    background: #FFF;
+    color: #101832;
+    border:solid 1px #CCC;
+}
+
+.btn-empty {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 15px;
+    color: #FFF;
+    padding:10px 20px;
+    background: #101832;
+    border: 2px solid #EC2D86;
+    border-radius: 100px;
+    text-decoration: none;
+    letter-spacing: .1rem;
+}
+
+.btn-empty:hover {
+    background: #FFF;
+    color: #101832;
+}
+
+#roadmap-step { display: flex; justify-content: center; font-weight: 700; font-size: 15px; }
+#roadmap-step a { padding:10px 25px; background-color: #353A4B; text-decoration: none; cursor:pointer; color:#FFF;  }
+#roadmap-step a:first-child { border-radius: 15px 0px 0px 15px; }
+#roadmap-step a:last-child { border-radius: 0px 15px 15px 0px; }
+#roadmap-step a.active { background-color: #FFF; color:#000; }
+
+.roadmap-detail { position: relative; }
+.roadmap-detail .title { color:#FFF; font-size: 20px; font-weight: 700; position: relative; }
+.roadmap-detail .title.active { color:#EC2D86; }
+.roadmap-detail .title img { position: absolute; bottom:5px; margin-left:10px; }
+
+.roadmap-detail .dot { margin: 30px 0px; z-index:10; }
+.roadmap-detail .roadmap-article { margin: auto; font-weight: 600; height: 55px; width:80%; color:#FFF; background-color: #272F46; display: flex; align-items: center; justify-content: center; border-radius: 18px; margin-bottom: 10px; }
+.roadmap-detail .roadmap-article.active { background-color: #FFF; color:#1D1B28;}
+.roadmap-detail .line { position: absolute; top:66px; z-index: 5; }
+
+.hidden { display: none; }
+
+#footer { font-size: 12px; text-align: center; }
+
+#footer a { text-decoration: none; }
+#footer a.link { color:#77899A; display: inline-block; margin-left: 20px; }
+
+#footer a.bold-link { font-size: 18px; font-weight: 400; color:#EC2D86; }
+#footer a:hover { color: #FFF;}
+
+#footer a.sns img { width:40px; margin-top: 20px; margin-bottom: 20px; }
+#footer a.sns { margin: 0px 10px; }
+#footer a.sns:hover { opacity: 0.5; }
+
+@media (max-width: 575px)
+{
+    .copy-title { font-size: 24px; margin-top: 2%; line-height: 120%; }
+    .copy-desc { font-size: 12px;  margin-top:11%; }
+    .container { padding:30px 25px; }
+    .sm-w-100 { padding: 30px 0px; }
+}
+
+@media (min-width: 576px)
+{
+    .copy-title { font-size: 30px; line-height: 120%; }
+}
+
+@media (min-width: 768px)
+{
+    .copy-title { font-size: 40px; line-height: 120%; }
+    .copy-desc { font-size: 15px; margin-bottom: 40px; margin-top:7%; }
+}
+
+@media (min-width: 992px)
+{
+    .copy-title { font-size: 50px; margin-top: 2%; }
+    #footer { text-align:initial; }
+    #footer .sns img { margin: 0px 0px; }
+}
+
+@media (min-width: 1200px)
+{
+    .copy-title { margin-top: 6%; }
+}
+
+@media (min-width: 1400px)
+{
+    .copy-title { margin-top: 8%; }
+}
